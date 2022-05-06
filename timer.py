@@ -35,6 +35,17 @@ def timer(seconds):
         seconds = seconds - (minutes * 60)
         minutes = minutes - (hours * 60)
         return f"{hours} hours, {minutes} minutes and {seconds} seconds"
+    
+    elif seconds == 31536000:
+        return "1 year"
+    
+    elif seconds > 31536000:
+        seconds = seconds - (minutes * 60)
+        minutes = minutes - (hours * 60)
+        hours = hours - (days * 24)
+        days = days - (years * 365)
+        return f"{years} years, {hours} hours, {minutes} minutes and {seconds} seconds"
+        
         
 def format_duration(seconds):
     if seconds == 0:
@@ -42,4 +53,6 @@ def format_duration(seconds):
     else:
         return timer(seconds)
         
-print(format_duration(53214))
+print(format_duration(31536362))
+
+# nie dziala jesli jest dokladnie jeden rok i wiecej niz 1 wartosc z kazdego rodzaju
