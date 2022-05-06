@@ -36,10 +36,10 @@ def timer(seconds):
         minutes = minutes - (hours * 60)
         return f"{hours} hours, {minutes} minutes and {seconds} seconds"
         
-def format(seconds):
+def format_duration(seconds):
     if seconds == 0:
         return "now"
     else:
         return timer(seconds)
         
-print(format(53214))
+print(format_duration(53214))
