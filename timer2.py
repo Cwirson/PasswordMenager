@@ -1,4 +1,3 @@
-
 def timer(seconds):
     if seconds == 0:
         return "now"
@@ -34,8 +33,5 @@ def timer(seconds):
     elif len(list_of_formats) == 4:
         return f"{list_of_values[0]} {list_of_formats[0]}, {list_of_values[1]} {list_of_formats[1]}, {list_of_values[2]} {list_of_formats[2]} and {list_of_values[3]} {list_of_formats[3]}"
     elif len(list_of_formats) == 5:
-        return f"{list_of_values[0]} {list_of_formats[0]}, {list_of_values[1]} {list_of_formats[1]}, {list_of_values[2]} {list_of_formats[2]}, {list_of_values[3]} {list_of_formats[3]} and {list_of_values[4]} {list_of_formats[5]}"
-    
-
-print(timer(3661))
+        return f"{list_of_values[0]} {list_of_formats[0]}, {list_of_values[1]} {list_of_formats[1]}, {list_of_values[2]} {list_of_formats[2]}, {list_of_values[3]} {list_of_formats[3]} and {list_of_values[4]} {list_of_formats[4]}"
 
